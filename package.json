@@ -1,0 +1,9 @@
+{
+  "name": "games",
+  "version": "1.0.0",
+  "description": "gameStore",
+  "main": "index.js",
+  "repository": "https://github.com/Moki00/gameStore.git",
+  "author": "mokiwins@gmail.com",
+  "license": "MIT"
+}

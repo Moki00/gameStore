@@ -36,7 +36,13 @@ function Contain({
 
 Contain.defaultProps = defaultCon;
 
-// Functional props
+
+/**
+ * 
+ * Functional props
+ * @param param0 
+ * @returns 
+ */
 function TextWithNumber({
   head,
   children

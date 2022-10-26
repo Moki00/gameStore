@@ -1,10 +1,50 @@
+{ "games":[
 {
-	"name": "Fallout3",
-	"price": 19.99,
-	"category": "video game"
-}
+	"name":"Chrono Cross",
+	"price":19.99,
+	"date":"1999",
+	"category":"RPG",
+	"age":"12+",
+	"desc":"Chrono Cross is a 1999 role-playing video game developed and published by Square for the PlayStation video game console. It is set in the same world as Chrono Trigger."
+},
+{
+	"name":"Chrono Trigger",
+	"price":24.99,
+	"date":"1995",
+	"category":"RPG",
+	"age":"11+",
+	"desc":"time travel RPG"
+},
 {
 	"name": "Final Fantasy 7",
-	"price": 9.99,
-	"category": "video game"
+	"price": 49.99,
+	"date":"1997",
+	"category":"RPG",
+	"age":"16+",
+	"desc":"Final Fantasy VII is a 1997 role-playing video game developed by Square for the PlayStation console. Full of magic & monsters"
+},
+{
+	"name": "Fallout3",
+	"price": 59.99,
+	"date":"2008",
+	"category":"RPG",
+	"ages":"Mature 17+",
+	"desc":"RPG game about post nuclear war"
+},
+{
+	"name":"Fortnite",
+	"price":0,
+	"date":"2017 July 21",
+	"category":"First person shooter",
+	"ages":"12+",
+	"desc":"Fortnite is a free-to-play Battle Royale game with numerous game modes for every type of game player. Watch a concert, build an island or fight."
+},
+{
+	"name":"",
+	"price":"",
+	"date":"",
+	"category":"",
+	"ages":"",
+	"desc":""
+}]
 }

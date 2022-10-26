@@ -2,8 +2,7 @@ games
 
 name
 price
-id
+date
 type
 ages
 skill
-length

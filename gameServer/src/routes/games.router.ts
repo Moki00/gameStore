@@ -7,9 +7,15 @@ import Game from "../models/game";
 // Global Config
 export const gamesRouter = express.Router();
 
+/**
+ * 
+ */
 gamesRouter.use(express.json());
 
-// GET
+/**
+ * GET
+ * 
+ */
 gamesRouter.get("/", async (_req: Request, res: Response) => {
     try {
        const games = (await collections.games.find({}).toArray()) as unknown as Game[];
@@ -20,6 +26,9 @@ gamesRouter.get("/", async (_req: Request, res: Response) => {
     }
 });
 
+/**
+ * 
+ */
 gamesRouter.get("/:id", async (req: Request, res: Response) => {
     const id = req?.params?.id;
 
@@ -36,7 +45,10 @@ gamesRouter.get("/:id", async (req: Request, res: Response) => {
     }
 });
 
-// POST
+/**
+ * POST
+ * 
+ */
 gamesRouter.post("/", async (req: Request, res: Response) => {
     try {
         const newGame = req.body as Game;
@@ -51,7 +63,10 @@ gamesRouter.post("/", async (req: Request, res: Response) => {
     }
 });
 
-// PUT
+/**
+ * PUT
+ * 
+ */
 gamesRouter.put("/:id", async (req: Request, res: Response) => {
     const id = req?.params?.id;
 
@@ -70,7 +85,10 @@ gamesRouter.put("/:id", async (req: Request, res: Response) => {
     }
 });
 
-// DELETE
+/**
+ * DELETE
+ * 
+ */
 gamesRouter.delete("/:id", async (req: Request, res: Response) => {
     const id = req?.params?.id;
 
@@ -90,3 +108,4 @@ gamesRouter.delete("/:id", async (req: Request, res: Response) => {
         res.status(400).send(error.message);
     }
 });
+

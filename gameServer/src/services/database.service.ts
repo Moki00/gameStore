@@ -5,7 +5,10 @@ import * as dotenv from "dotenv";
 // Global Variables
 export const collections: { games?: mongoDB.Collection } = {}
 
-// Initialize Connection
+/**
+ * Initialize Connection
+ * 
+ */
 export async function connectToDatabase() {
   dotenv.config();
 
@@ -20,7 +23,7 @@ export async function connectToDatabase() {
     "validator": {
       $jsonSchema: {
         bsonType: "object",
-        required: ["name", "price", "category"],
+        required: ["name", "price", "date", "category", "age", "desc"],
         additionalProperties: false,
         properties: {
           _id: {},
@@ -32,10 +35,22 @@ export async function connectToDatabase() {
             bsonType: "number",
             description: "'price' is required and is a number"
           },
+          date: {
+            bsonType: "string",
+            description: "'date' is required and is a string"
+          },
           category: {
             bsonType: "string",
             description: "'category' is required and is a string"
-          }
+          },
+          age: {
+            bsonType: "string",
+            description: "'age' is required and is a string"
+          },
+          desc: {
+            bsonType: "string",
+            description: "'desc' is required and is a string"
+          },
         }
       }
     }
